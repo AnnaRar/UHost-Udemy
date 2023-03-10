@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;700&family=Itim&display=swap");
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+  margin: 0;
+  background: rgb(255, 252, 242);
+  font-family: "Fira Sans", sans-serif;
+}
+.main__header {
+  width: 100%;
+  background: rgb(204, 197, 185);
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(64, 61, 57);
+}
+.main__header div {
+  display: inline-block;
+}
+.main__page__link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(37, 36, 34);
+}
+.main__page__navigation {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+.main__nav__list {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.main__nav__item {
+  display: inline-block;
+  margin: 0 16px;
+}
+.main__nav__item a {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(37, 36, 34);
+  text-decoration: none;
+  transition: all 50ms ease-in-out;
+}
+.main-nav__item--cta a {
+  color: rgb(255, 252, 242);
+  background: rgb(235, 94, 40);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.main__nav__item a:hover {
+  color: rgb(235, 94, 40);
+}
+.main-nav__item--cta a:hover {
+  color: rgb(235, 94, 40);
+  background: rgb(255, 252, 242);
+  border-radius: 8px;
+  padding: 5px;
+}
+.main__section__pic div {
+  background: url("./frre_bird.jpg");
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+}
+
+.main__section__pic h1 {
+  display: none;
+}
+.plan__header {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20pt;
+}
+
+.main__plans div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.plan {
+  background: #ccc5b9;
+  color: rgb(37, 36, 34);
+  padding: 16px;
+  margin: 8px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(244, 239, 234),
+    2px 2px 2px 2px rgb(100, 87, 71), -1px -1px 1px 1px rgb(244, 239, 234),
+    -2px -2px 2px 2px rgb(153, 136, 116);
+}
+
+ul.simple__plan__description,
+ul.recommended__plan__decription {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.plan h3 {
+  color: rgb(96, 76, 49);
+  font-size: 17pt;
+}
+.plan p {
+  color: #403d39;
+  font-size: 16pt;
+  font-weight: 700;
+}
+.plan__feature,
+.rec__plan__feature {
+  margin: 5px;
+  font-size: 13pt;
+}
+.recommended__plan,
+.recommended__plan p {
+  background: #eb5e28;
+  color: aliceblue;
+}
+
+button {
+  font: inherit;
+  font-size: 10pt;
+  color: #252422;
+  background: none;
+  border: 0;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  font-weight: 700;
+  z-index: 1;
+  margin: 15px 0;
+  cursor: pointer;
+}
+button:after {
+  content: "";
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  color: #252422;
+
+  transition: inherit;
+  position: absolute;
+  top: -50%;
+  left: -10px;
+
+  opacity: 0.5;
+  z-index: -1;
+}
+
+button:hover:after {
+  width: calc(100% + 20px);
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.core__features {
+  color: white;
+  background-color: #eb5e28;
+  text-align: center;
+  margin: 40px 0 0 0;
+  padding: 20px;
+}
+.core__fetures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.core__feature__image {
+  width: 125px;
+  height: 125px;
+  background-color: #ccc5b9;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+p {
+  margin-top: 5px;
+}
+
+.main__footer__nav {
+  margin: 40px 0 0 0;
+  padding: 20px;
+  background: #252422;
+  color: #ccc5b9;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer__link > a {
+  text-decoration: none;
+  color: #ccc5b9;
+  transition: 0.3s ease-in-out;
+}
+
+.footer__link > a:hover {
+  color: #eb5e28;
+  font-size: calc(100% + 3px);
+}
